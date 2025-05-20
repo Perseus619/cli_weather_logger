@@ -30,7 +30,7 @@ def extract_metrics():
     for key, value in extracted.items():
         units = unit_map.get(key,"")
 
-        unit[key] = f" {value} {units}"
+        unit[key] = f" {value}{units}"
         
     
     final_metric = {

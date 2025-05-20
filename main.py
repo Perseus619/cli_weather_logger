@@ -1,10 +1,12 @@
 import time
+import sys
 from tabulate import tabulate
 from weather.print_weather import print_weather
+from logger.view_logger import view_logger
+from utils.nav import nav
 
 def main():
-
-    
+ while True:  
     print("Weather Logger".center(50,(".")))
     print("[Log weather of anywhere in the world]".center(50,(" ")))
     print("\n")
@@ -23,14 +25,18 @@ def main():
         user = input("Make your choice mate - ").strip()
         if user == "1":
           print_weather()
+          time.sleep(3)
+          nav()
           break
         elif user == "2":
-          #  view_logger() 
-          print(1)
+           view_logger()
+           time.sleep(3)
+           nav()
+           break 
         elif user == "3":
            print("Thank You For Using Weather Logger")
            time.sleep(1)
-           break
+           sys.exit()
         else:
           raise ValueError("Mate please give an appropiate input")     
      except ValueError as e :

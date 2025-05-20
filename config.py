@@ -12,29 +12,9 @@ metrics_map = {
 }
 
 unit_map = {
-    "Temperature": "C",
-    "Feels Like": "C",
-    "Humidity": "%",
-    "Wind Speed": "m/s",
-    "Condition": ""
+    "Temperature":"\u00B0C",
+    "Feels Like":"\u00B0C",
+    "Humidity":"%",
+    "Wind Speed":"m/s",
+    "Condition":""
 }
-
-
-
-
-
-
-
-
-
-# q = city name
-# limit = 1
-#  appid
-
-
-
-
-
-# appid
-# lat
-# lon
