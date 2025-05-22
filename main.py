@@ -30,7 +30,6 @@ def main():
           break
         elif user == "2":
            view_logger()
-           time.sleep(3)
            nav()
            break 
         elif user == "3":
